@@ -13,6 +13,8 @@ if (!PASSWORD || !SECRET) {
 app.use(express.json({limit:"10kb"}));
 app.use(express.static(path.join(__dirname,"public")));
 
+app.use("/assets", express.static(path.join(__dirname,"assets")));
+
 const participants = [
 "Ninang Hyacinth Sortijas","Ninang Julie Maniebo","Shella Buena Araza",
 "Rency Araza Luna","Emma Arenas","Daine Krishmen Abella",
